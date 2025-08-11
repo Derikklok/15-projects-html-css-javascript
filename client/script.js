@@ -99,6 +99,7 @@ function showQuestion(){
 
   questionText.textContent = currentQuestion.question;
   
+  // this make sure when moving from one question to another question the answers from the previous question are not visible.
   answersContainer.innerHTML = "";
 
   currentQuestion.answers.forEach(answer => {
