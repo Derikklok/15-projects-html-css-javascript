@@ -1,11 +1,97 @@
 * {
-  font-family: poppins;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: poppins;
 }
 
 body {
   background: linear-gradient(135deg, #b2b0e8, #3b38a0);
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #2d3436;
 }
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 24px;
+  box-shadow: 0 12px 24px rgba(39, 39, 39, 0.15);
+}
+
+h1{
+  text-align: center;
+  color: #5a5a5a;
+  margin-bottom: 35px;
+  letter-spacing: -0.5px;
+}
+
+h2{
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.balance-container{
+  text-align: center;
+  margin-bottom: 35px;
+  padding: 24px;
+  background:linear-gradient(135deg, #b2b0e8, #3b38a0);
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.balance-container h1{
+  color: rgb(183, 213, 255);
+  margin: 15px;
+  margin-bottom: 20px;
+}
+
+.summary{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.income,
+.expenses{
+  background-color: #b2b0e8a5;
+  border: 1px solid rgba(199, 199, 199, 0.564);
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 3px;
+  transition: transform 0.2s ease;
+}
+
+.income p{
+  color: rgb(205, 221, 243);
+}
+.expenses p{
+  color: rgb(205, 221, 243);
+}
+
+.income:hover,
+.expenses:hover{
+  transform: translateY(-2px);
+}
+
+.income h3{
+  color: rgb(210, 255, 241);
+}
+
+.expenses h3{
+  color:rgb(245, 206, 206);
+}
+
+.main-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
